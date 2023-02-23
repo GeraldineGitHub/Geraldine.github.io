@@ -1,0 +1,142 @@
+.navbar {
+
+    padding: 2rem;
+    background-color: rgba(8, 7, 8, 0.76);
+}
+
+.nav-item {
+  font-size: 1.3rem;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: 'Rubik Dirt', cursive;
+  color: black;
+}
+
+.hero {
+background-color: orangered;
+min-height: 450px;
+text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: 40px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: rgb(177, 177, 206);
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-imagen-conocimientos {
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  border-radius: 50px;
+}
+
+.proyectos .row div {
+  height: 350px;
+  background-color: blue;
+  border: 3px solid rgb(8, 8, 65);
+}
+
+.proyectos {
+  font-size: 1.5rem;
+  padding: 15px 0;
+  position: relative;
+}
+.proyectos-re {
+  background-color: orangered;
+  padding: 40px;
+}
+
+.proyectos-re img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyectos:hover img {
+  opacity: 0.2;
+}
+.proyectos:hover .overlay {
+  opacity: 1;
+}
+
+.Contacto {
+  background-color: orangered;
+}
+
+.Contacto .container {
+  max-width: 2100 px;
+  min-height: 200 px;
+  padding: 20 px;
+}
+
+.Contacto .rectangulo {
+  margin-top: -5 rem;
+  background-color: black;
+  border-radius: 10 px;
+  box-shadow: 0 px 1 px 4 px 1 px pink;
+}
+
+.Contacto .row {
+  width: 100 px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/*logo dispositivo movil */
+@media screen and (max-width: 768px){
+  .navbar-brand {
+    display: none;
+  }
+  }
+
