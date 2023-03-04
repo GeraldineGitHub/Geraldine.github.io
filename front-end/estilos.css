@@ -1,7 +1,13 @@
-.navbar {
+.contenedor {
+  width: 100%;
+  
+  
 
-    padding: 2rem;
-    background-color: rgba(8, 7, 8, 0.76);
+}
+
+.navbar {
+    padding: 3rem;
+    background-color: black;
 }
 
 .nav-item {
@@ -21,62 +27,82 @@ justify-content: center;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 40px;
   font-family: 'Rubik Dirt', cursive;
-  color: black;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 0 30px 0;
 }
 
 .hero {
 background-color: orangered;
-min-height: 450px;
+min-height: 45%;
 text-align: center;
 }
 
 .hero-principal {
-  padding: 3rem;
+  padding: 100px;
 }
 
 .hero-imagen-desarrollador {
-   width: 200px;
-   height: 200px;
+   width: 250px;
+   height: 250px;
    border-radius: 50%;
    margin: 40px;
+   border: 3px solid #940253
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: rgb(177, 177, 206);
+  color: rgb(125, 195, 228);;
   font-family: 'Roboto', sans-serif;
+}
+
+.hero h3{
+font-size: 40px;
+text-transform: uppercase;
+padding: 170px 0 140px 0;
+align-items: center;
+color: white;
 }
 
 .hero-imagen-conocimientos {
   width: 200px;
   height: 200px;
-  margin: 80px;
-  border-radius: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 3px solid #940253
 }
 
 .proyectos .row div {
-  height: 350px;
-  background-color: blue;
-  border: 3px solid rgb(8, 8, 65);
+  height: 50px;
 }
 
 .proyectos {
-  font-size: 1.5rem;
-  padding: 15px 0;
+  font-size: 25px;
+  padding: 15px;
   position: relative;
+  color: white;
 }
+
 .proyectos-re {
   background-color: orangered;
-  padding: 40px;
+  padding: 10px;
+}
+
+.proyectos-re h3 {
+font-size: 40px;
+text-transform: uppercase;
+padding: 50px 0 0 0;
+align-items: center;
+color: white;
 }
 
 .proyectos-re img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  padding: 5px;
+  border: 3px solid #940253;
   display: block;
   transition: all 0.2s ease;
 }
@@ -94,49 +120,140 @@ text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
 }
 
 .overlay p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
+  display: flex;
 }
 
 .proyectos:hover img {
   opacity: 0.2;
+  display: flex;
 }
 .proyectos:hover .overlay {
   opacity: 1;
+  display: flex;
 }
 
-.Contacto {
+.idiomas{
+  padding: 80px 0 100px 0;
+  text-align: center;
   background-color: orangered;
+  color: #fff;
 }
 
-.Contacto .container {
-  max-width: 2100 px;
-  min-height: 200 px;
-  padding: 20 px;
+.idiomas h3{
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
-.Contacto .rectangulo {
-  margin-top: -5 rem;
+.idiomas .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+
+
+.idiomas .contenido-seccion .row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.idiomas .contenido-seccion .row .col-12 .col-md-6 .col-lg-4{
+  width: 47%;
+  text-align: left ;
+  height: 47%;
+  margin: 10px;
+}
+
+.idiomas .contenido-seccion .row .col-12 .col-md-6 .col-lg-4 .cont-barra{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.idiomas .contenido-seccion .barra{
+  display: flex;
+  border: 1px solid #940253;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.idiomas .contenido-seccion .barra .e{
+  background-color: #363636;
+  width: 20px;
+  height: 30px;
+  margin-right: 2px;
+}
+
+.contacto {
+  background-color: orangered;
+  display: flex;
+}
+
+.contacto .container {
+  max-width: 1900 px;
+  min-height: 300 px;
+  padding: 10 px;
+  display: flex;
+}
+
+.contacto .rectangulo {
+  margin-top: -3 rem;
   background-color: black;
+  padding: 70px 0 80px 0;
   border-radius: 10 px;
   box-shadow: 0 px 1 px 4 px 1 px pink;
+  display: flex;
 }
 
-.Contacto .row {
-  width: 100 px;
+.contacto .row {
+  width: 70 px;
   display: flex;
   align-items: center;
   color: white;
+  display: flex;
+}
+
+.contacto .row h3{
+text-transform: uppercase;
+padding: 0 0 15px 0;
+align-items: center;
 }
 
 /*logo dispositivo movil */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 360px){
   .navbar-brand {
     display: none;
   }
+} 
+
+/* responsive js*/
+
+@media screen and (max-width: 360px){
+  .idiomas .contenido-seccion .row .col-12 .col-md-6 .col-lg-4 .cont-barra .barra{
+    justify-content: center;
+    margin-block-end: auto ;
   }
+} 
+
+@media screen and(max-width: 360px){
+  .idiomas .contenido-seccion .row{
+  display: block;
+}
+.idiomas .contenido-seccion .row .col-12 .col-md-6 .col-lg-4 {
+  width: 100%;
+  text-align: center;
+}
+.idiomas .contenido-seccion .row .col-12 .col-md-6 .col-lg-4 .cont-barra {
+  justify-content: center;
+}
+}
 
